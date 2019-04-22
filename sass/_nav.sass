@@ -1,0 +1,108 @@
+.nav
+     position: absolute
+     width: 100%
+     z-index: 1
+.navbar
+     +flexbox
+.brand
+     @media (max-width:767px)
+          height: 30px
+.nav-item
+     +px(1rem)
+     &.active
+          background: $primary
+     &:hover
+          background-color: $primary
+          +shadow-lg
+.nav-link
+     +flexbox
+     align-items: center
+     +py(.6rem)
+     &:hover
+          color: white
+.slide
+     +flexbox
+     align-items: center
+     background-position: center center
+     background-repeat: no-repeat
+     background-size: cover
+
+.slide-content
+     @media (max-width:767px)
+          font-size: 1.5rem
+     +py(200px)
+     +respond-to(medium)
+          +py(300px)
+     text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4)
+     font-size: 3rem
+     text-align: center
+     font-weight: bold
+
+.slide-control
+     left: 0
+     right: 0
+     position: absolute
+     top: 50%
+     width: 100%
+     +mx(auto)
+     +flexbox
+     justify-content: space-between
+     transform: translateY(-50%)
+     +respond-to(x-small)
+          max-width: 540px-156px
+     +respond-to(small)
+          max-width: 720px-156px
+     +respond-to(medium)
+          max-width: 960px-156px
+     +respond-to(large)
+          max-width: 1140px-156px
+     @media (max-width:767px)
+          display: none
+.slide-arrow#prev
+     transform: translateX(-100%)
+.slide-arrow#next
+     transform: translateX(100%)
+.slick-dots
+     display: flex
+     justify-content: center
+     position: absolute
+     width: 100%
+     bottom: 50px
+     @media (max-width:767px)
+          bottom: 40px
+     button
+          +easeInOutQuint
+          font-size: 0
+          line-height: 0
+          display: block
+          width: 12px
+          height: 12px
+          +mx(5px)
+          cursor: pointer
+          color: transparent
+          border: 0
+          padding: 0
+          outline: none
+          background: white
+          border-radius: 12px
+.slick-active
+     button
+          background-color: $primary
+          width: 54px
+.contact-us
+     +flexbox
+     +flex-wrap
+     .half
+          text-align: center
+          width: 100%
+          .btn
+               margin-top: 30px
+          +respond-to(medium)
+               width: 50%
+               text-align: left
+               .contact
+                    +px(50px)
+                    height: 50%
+               .btn
+                    margin-top: 0px
+                    float: right

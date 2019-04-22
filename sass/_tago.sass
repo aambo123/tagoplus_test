@@ -1,0 +1,51 @@
+.hero
+     position: relative
+     min-height: 300px
+.header
+     padding-top: 150px
+     padding-bottom: 100px
+.community
+     background-image: url(../assets/community.jpg)
+     background-position: center center
+     background-repeat: no-repeat
+     background-size: cover
+.customer-center
+     background-image: url(../assets/phone.jpg)
+     background-position: center center
+     background-repeat: no-repeat
+     background-size: cover
+     padding-top: 240px !important
+.notice
+     +px(20px)
+     +py(10px)
+     +respond-to(medium)
+          +px(40px)
+          +py(20px)
+.bg-estimate
+     background-image: url(../assets/estimate-bg.jpg)
+     +bg-center
+
+footer
+     background: $brown
+     color: white
+     .col-sm-3
+          background-color: lighten($brown,10%)
+          +py(20px)
+     .col-sm-9
+          background: $brown
+          +py(20px)
+          @media (max-width:767px)
+               .flex
+                    justify-content: center
+     .row
+          flex-direction: column-reverse
+          div
+               text-align: center
+          .col-sm-9
+               +respond-to(small)
+                    text-align: left
+          +respond-to(x-small)
+               flex-direction: row
+               .col-sm-3,.col-sm-9
+                    +py(40px)
+                    background: $brown

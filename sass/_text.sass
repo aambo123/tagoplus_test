@@ -1,0 +1,42 @@
+@for $i from 1 to 6
+     h#{$i}
+          word-break: keep-all
+          font-size: ceil(power(1.17,(7     -$i)) * 1000em)/1000
+          +respond-to(small)
+               font-size: ceil(power(1.2,(7     -$i)) * 1000em)/1000
+
+          +respond-to(medium)
+               font-size: ceil(power(1.23,(7     -$i)) * 1000em)/1000
+          +respond-to(large)
+               font-size: ceil(power(1.25,(7     -$i)) * 1000em)/1000
+          @if $i > 3
+               font-weight: 300
+          @else
+               font-weight: bold
+
+
+h1, h2, h3, h4, h5
+     margin-top: .5rem
+     margin-bottom: .5rem
+.bold
+     font-weight: bold
+.upper
+     text-transform: uppercase
+.small
+     font-size: 80%
+     opacity: .6
+.text-center
+     text-align: center
+.text-right
+     text-align: right
+.text-left
+     text-align: left
+.text-muted
+     color: #909090
+.no-line-height
+     line-height: 0
+.line-height-refresh
+     line-height: 1.45
+@for $i from 1 to 11
+     .opacity-#{$i*10}
+          opacity: $i*0.1

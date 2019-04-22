@@ -1,0 +1,14 @@
+.breadcrumb
+     color: white
+     list-style: none
+     font-size: .8rem
+     text-transform: uppercase
+     font-weight: bold
+     li
+          display: inline-block
+          &:hover
+               color: $primary
+     li+li::before
+          +mx(.4rem)
+          content: '/\00a0'
+          color: darken(white, 20%)
