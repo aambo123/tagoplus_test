@@ -1,0 +1,48 @@
+.tabs
+     +flexbox
+     border-bottom: 1px solid darken($primary, 10%)
+     a
+          +px(1.6rem)
+          display: block
+          +py(.5rem)
+          margin-bottom: -1px
+          margin-right: 2px
+          border-width: 3px 1px 1px 1px
+          border-color: $primary
+          border-bottom-color: white !important
+          border-style: solid
+          border-radius: 4px 4px 0 0
+          background-color: white
+          &.inactive
+               background-color: darken($primary, 10%)
+               color: white
+               border-color: darken($primary, 10%)
+               border-bottom-color: darken($primary, 10%) !important
+               margin-bottom: 0px
+.icon
+     display: inline-block
+     width: 40px
+     height: 40px
+     background: $grey
+     font-size: 22px
+     line-height: 40px
+     color: white
+     text-align: center
+     border-radius: 40px
+     +mx(1rem)
+.accordion
+     +py(.6rem)
+     display: block
+     font-weight: 500
+     border-bottom: 1px solid $grey
+.tab-content ul
+     border-top: 3px solid darken($grey,20%)
+     margin-top: 1rem
+.inner
+     padding-left: 30px
+     display: none
+     &.show
+          +py(.6rem)
+          font-weight: 500
+          align-items: center
+          background-color: $light-grey

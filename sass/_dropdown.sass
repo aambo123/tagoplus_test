@@ -1,0 +1,33 @@
+.dropdown
+     &::after
+          position: absolute
+          top: 9px
+          right: 0
+          display: inline-block
+          content: ""
+          background-image: url(../assets/arrow-down.svg)
+          width: 20px
+          height: 20px
+.dropdown-content
+     +ease-in-out(.1s)
+     margin-top: 10px
+     min-width: 160px
+     position: absolute
+     left: 0
+     background-color: white
+     color: black
+     +py(.5rem)
+     padding-left: .8rem !important
+     padding-right: .8rem !important
+     &::before
+          position: absolute
+          height: 10px
+          width: 10px
+          background-color: white
+          content: ""
+          top: -5px
+          +transform(rotate,45deg)
+     li
+          width: 100%
+          +py(.5rem)
+          +px(.2rem)

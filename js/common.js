@@ -49,3 +49,55 @@ $('#range').on('change', function() {
                $('#duplicate input:last').remove();
           }
      });
+
+// dropdown
+
+$('.dropdown').click(function(){
+     $(this).next('#dropdown-content').toggle();
+});
+$('body').on('click',function(event){
+   if(!$(event.target).is('.dropdown')){
+     $('#dropdown-content').hide();
+   }
+});
+
+
+
+// tab
+
+$(document).ready(function() {
+
+     $('#tabs  a:not(:first)').addClass('inactive');
+     $('.tab-content').hide();
+     $('.tab-content:first').show();
+
+     $('#tabs  a').click(function(){
+         var t = $(this).attr('id');
+       if($(this).hasClass('inactive')){ //this is the start of our condition
+         $('#tabs  a').addClass('inactive');
+         $(this).removeClass('inactive');
+
+         $('.tab-content').hide();
+         $('#'+ t + 'C').fadeIn('slow');
+      }
+     });
+
+});
+
+
+// accordion
+$('.accordion').click(function(e) {
+     e.preventDefault();
+
+    var $this = $(this);
+
+    if ($this.next().hasClass('show')) {
+        $this.next().removeClass('show');
+        $this.next().slideUp(350);
+    } else {
+        $this.parent().parent().find('li .inner').removeClass('show');
+        $this.parent().parent().find('li .inner').slideUp(350);
+        $this.next().toggleClass('show');
+        $this.next().slideToggle(350);
+    }
+});
