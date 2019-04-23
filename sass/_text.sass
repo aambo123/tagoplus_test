@@ -1,7 +1,49 @@
+@font-face
+     font-family: 'Noto Sans KR'
+     font-style: normal
+     font-weight: 300
+     src: url('../fonts/noto-sans-kr-v11-korean-300.eot') /* IE9 Compat Modes */
+     src: local('Noto Sans KR Light'), local('NotoSansKR-Light'),url('../fonts/noto-sans-kr-v11-korean-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/noto-sans-kr-v11-korean-300.woff2') format('woff2'), /* Super Modern Browsers */url('../fonts/noto-sans-kr-v11-korean-300.woff') format('woff'), /* Modern Browsers */ url('../fonts/noto-sans-kr-v11-korean-300.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/noto-sans-kr-v11-korean-300.svg#NotoSansKR') format('svg') /* Legacy iOS */
+
+/* noto-sans-kr-regular - korean */
+@font-face
+     font-family: 'Noto Sans KR'
+     font-style: normal
+     font-weight: 400
+     src: url('../fonts/noto-sans-kr-v11-korean-regular.eot') /* IE9 Compat Modes */
+     src: local('Noto Sans KR Regular'), local('NotoSansKR-Regular'),url('../fonts/noto-sans-kr-v11-korean-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */url('../fonts/noto-sans-kr-v11-korean-regular.woff2') format('woff2'), /* Super Modern Browsers */url('../fonts/noto-sans-kr-v11-korean-regular.woff') format('woff'), /* Modern Browsers */url('../fonts/noto-sans-kr-v11-korean-regular.ttf') format('truetype'), /* Safari, Android, iOS */url('../fonts/noto-sans-kr-v11-korean-regular.svg#NotoSansKR') format('svg') /* Legacy iOS */
+
+/* noto-sans-kr-500 - korean */
+@font-face
+     font-family: 'Noto Sans KR'
+     font-style: normal
+     font-weight: 500
+     src: url('../fonts/noto-sans-kr-v11-korean-500.eot') /* IE9 Compat Modes */
+     src: local('Noto Sans KR Medium'), local('NotoSansKR-Medium'),url('../fonts/noto-sans-kr-v11-korean-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */url('../fonts/noto-sans-kr-v11-korean-500.woff2') format('woff2'), /* Super Modern Browsers */url('../fonts/noto-sans-kr-v11-korean-500.woff') format('woff'), /* Modern Browsers */url('../fonts/noto-sans-kr-v11-korean-500.ttf') format('truetype'), /* Safari, Android, iOS */url('../fonts/noto-sans-kr-v11-korean-500.svg#NotoSansKR') format('svg') /* Legacy iOS */
+
+/* noto-sans-kr-100 - korean */
+@font-face
+     font-family: 'Noto Sans KR'
+     font-style: normal
+     font-weight: 100
+     src: url('../fonts/noto-sans-kr-v11-korean-100.eot') /* IE9 Compat Modes */
+     src: local('Noto Sans KR Thin'), local('NotoSansKR-Thin'),url('../fonts/noto-sans-kr-v11-korean-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */url('../fonts/noto-sans-kr-v11-korean-100.woff2') format('woff2'), /* Super Modern Browsers */url('../fonts/noto-sans-kr-v11-korean-100.woff') format('woff'), /* Modern Browsers */url('../fonts/noto-sans-kr-v11-korean-100.ttf') format('truetype'), /* Safari, Android, iOS */url('../fonts/noto-sans-kr-v11-korean-100.svg#NotoSansKR') format('svg') /* Legacy iOS */
+
+/* noto-sans-kr-300 - korean */
+
+/* noto-sans-kr-700 - korean */
+@font-face
+     font-family: 'Noto Sans KR'
+     font-style: normal
+     font-weight: 700
+     src: url('../fonts/noto-sans-kr-v11-korean-700.eot') /* IE9 Compat Modes */
+     src: local('Noto Sans KR Bold'), local('NotoSansKR-Bold'),url('../fonts/noto-sans-kr-v11-korean-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */url('../fonts/noto-sans-kr-v11-korean-700.woff2') format('woff2'), /* Super Modern Browsers */url('../fonts/noto-sans-kr-v11-korean-700.woff') format('woff'), /* Modern Browsers */url('../fonts/noto-sans-kr-v11-korean-700.ttf') format('truetype'), /* Safari, Android, iOS */url('../fonts/noto-sans-kr-v11-korean-700.svg#NotoSansKR') format('svg') /* Legacy iOS */
+
 @for $i from 1 to 6
      h#{$i}
           word-break: keep-all
           font-size: ceil(power(1.17,(7     -$i)) * 1000em)/1000
+          letter-spacing: -1px
           +respond-to(small)
                font-size: ceil(power(1.2,(7     -$i)) * 1000em)/1000
 
@@ -10,9 +52,9 @@
           +respond-to(large)
                font-size: ceil(power(1.25,(7     -$i)) * 1000em)/1000
           @if $i > 3
-               font-weight: 300
+               font-weight: 400
           @else
-               font-weight: bold
+               font-weight: 500
 
 
 h1, h2, h3, h4, h5
@@ -25,6 +67,16 @@ h1, h2, h3, h4, h5
 .small
      font-size: 80%
      opacity: .6
+.text-100
+     font-weight: 100
+.text-300
+     font-weight: 300
+.text-500
+     font-weight: 500
+.text-700
+     font-weight: 700
+.text-normal
+     font-weight: 400
 .text-center
      text-align: center
 .text-right
