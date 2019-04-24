@@ -34,7 +34,6 @@
           height: $i*10%
      .w-#{$i*10}
           width: $i*10%
-
 @for $i from 12 to 0
      .col-#{$i},.col-sm-#{$i},.col-md-#{$i},.col-lg-#{$i}
           position: relative
@@ -57,7 +56,10 @@
           +flex(100%/12 * $i)
           max-width: 100%/12 * $i
 
-
+.float-left
+     float: left
+.float-right
+     float: right
 
 
 .inline
