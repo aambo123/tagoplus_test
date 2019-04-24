@@ -3,6 +3,14 @@
      margin-bottom: 1rem
      color: #212529
      text-align: left
+.t-cell
+     padding: 1rem
+     border: 1px solid $grey
+     margin-left: -1px
+     margin-bottom: -1px
+     &:nth-child(odd)
+          background: $light-grey
+          font-weight: 500
      .form-control
           +my(0)
      tr
@@ -14,9 +22,11 @@
                background-color: $light-grey
                vertical-align: bottom
      td,th
-          border-top: 1px solid $grey
-          border-bottom: 1px solid $grey
-          padding: .75rem
+          border: 1px solid $grey
+          padding: 1rem
 th
-     text-align: center
+     text-align: left
      vertical-align: middle
+     background: $light-grey
+.table-responsive
+     overflow-x: scroll

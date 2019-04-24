@@ -29,7 +29,9 @@
 .bg-estimate
      background-image: url(../assets/estimate-bg.jpg)
      +bg-center
-
+.bg-about
+     background-image: url(../assets/bg-about.jpg)
+     +bg-center
 footer
      background: $brown
      color: white
@@ -59,4 +61,15 @@ footer
 .board-detail-title
      border-bottom: 1px solid $grey
      border-top: 3px solid darken($grey, 20%)
-.board-buttons
+.quotation
+     text-align: center
+     &::before,&::after
+          font-size: 50px
+          line-height: 0
+          color: $grey
+     &::before
+          content: "\275D"
+          margin-right: .5rem
+     &::after
+          content: "\275E"
+          margin-left: .5rem
