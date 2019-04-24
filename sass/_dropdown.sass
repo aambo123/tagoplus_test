@@ -1,13 +1,15 @@
 .dropdown
      &::after
-          position: absolute
           top: 9px
           right: 0
           display: inline-block
-          content: ""
-          background-image: url(../assets/arrow-down.svg)
+          content: "\2c5"
           width: 20px
           height: 20px
+          text-align: center
+          margin-left: 3px
+          line-height: 20px
+          transform: scaleX(1.5)
 .dropdown-content
      +ease-in-out(.1s)
      margin-top: 10px

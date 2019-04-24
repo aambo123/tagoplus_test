@@ -5,20 +5,27 @@
           <title>tagoplus</title>
           <link rel="stylesheet" href="css/style.css">
           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
-          <script src="js/common.js" charset="utf-8"></script>
+
           <script src="slick/slick.min.js" charset="utf-8"></script>
           <link rel="stylesheet" href="slick/slick.css">
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
      </head>
      <body>
-     <nav class="fixed nav  text-white">
-          <div class="container p-3">
-               <div class="flex align-center">
-                    <a href="#" >
-                         <img src="assets/logowhite.png" alt="" class="brand">
+     <nav class="nav">
+          <div class="asd">
+          </div>
+          <div class="container">
+               <div class="row align-center ">
+                    <a href="index.html" class="col-8 col-md-2 brand">
+                         <img src="assets/logowhite.png" alt="">
                     </a>
+                    <button class="toggle-menu ml-auto">
+                         <span></span>
+                         <span></span>
+                         <span></span>
+                    </button>
 
-                    <ul class="ml-auto flex ">
+                    <ul class="navbar col-md-10">
                          <li class="nav-item">
                               <a href="#" class="nav-link">회사소개</a>
                          </li>
@@ -40,9 +47,9 @@
                          <div class="nav-item">
                               <a class="nav-link dropdown">고객센터</a>
                               <ul class="dropdown-content" id="dropdown-content" style="display:none">
-                                   <li><a href="notice.html">공지사항</a></li>
-                                   <li><a href="faq.html">자주하는 질문</a></li>
-                                   <li><a href="gallery.html">갤러리</a></li>
+                                   <li><a href="notice.html" class="nav-link">공지사항</a></li>
+                                   <li><a href="faq.html" class="nav-link">자주하는 질문</a></li>
+                                   <li><a href="gallery.html" class="nav-link">갤러리</a></li>
                               </ul>
                          </div>
                     </ul>
@@ -90,8 +97,8 @@
      <section>
           <div class="container my-5">
                <div class="contact-us">
-                    <div class="half">
-                         <div class="contact bg-blueish-pink py-5 flex flex-wrap align-center">
+                    <div class="half order-1 order-md-0">
+                         <div class="contact bg-blueish-pink py-3 flex flex-wrap align-center">
                               <div class="col-12 col-lg-7">
                                    <h3>인력수급 문의</h3>
                                    <p>몽골 현지에서 개발진행을 하며 5명을 기본 팀구성으로 제공하고 있습니다.</p>
@@ -102,7 +109,7 @@
                                    </a>
                               </div>
                          </div>
-                         <div class="contact bg-teal h-50 py-5 flex flex-wrap align-center">
+                         <div class="contact bg-teal h-50 py-3 flex flex-wrap align-center">
                               <div class="col-12 col-lg-7">
                                    <h3>프로젝트 의로상담</h3>
                                    <p>빠른 시간에 친절하고 상세하게 상담해 드리겠습니다.</p>
@@ -114,7 +121,7 @@
                               </div>
                          </div>
                     </div>
-                    <div class="half no-line-height">
+                    <div class="half order-0 order-md-1 no-line-height">
                          <img src="assets/img.jpg" class="img-responsive" alt="">
                     </div>
                </div>
@@ -127,16 +134,16 @@
                <div class="container">
                     <div class="row justify-center mt-8">
                          <div class="col-4 col-sm-3">
-                              <img src="assets/notification.png" alt="">
-                              <h4>공지사항</h4>
+                              <img src="assets/notification.png" alt="공지사항" width="80px">
+                              <h5>공지사항</h5>
                          </div>
-                         <div class="col-4 col-sm-3 border-left">
-                              <img src="assets/comment.png" alt="">
-                              <h4>FAQ</h4>
+                         <div class="col-4 col-sm-3 border-left border-40">
+                              <img src="assets/comment.png" alt="FAQ" width="80px">
+                              <h5>FAQ</h5>
                          </div>
-                         <div class="col-4 col-sm-3 border-left">
-                              <img src="assets/pictures.png" alt="">
-                              <h4>갤러리</h4>
+                         <div class="col-4 col-sm-3 border-left border-40">
+                              <img src="assets/pictures.png" alt="갤러리" width="80px">
+                              <h5>갤러리</h5>
                          </div>
                     </div>
                </div>
@@ -153,25 +160,25 @@
                                         <img src="assets/more.png" alt="">
                                    </a>
                               </div>
-                              <div class="border-bottom border-grey py-2">
-                                   <span class="text-muted mr-3">19.05.05</span>
-                                   [보도지료] 타고플러스, 주묵받고 있는 해외 IT인력..
+                              <div class="border-bottom border-grey py-2 row">
+                                   <span class="text-muted mr-3 col-sm-2 order-1 order-md-0">19.05.05</span>
+                                   <span class="notice-title col-sm-10 order-0 order-md-1">[보도지료] 타고플러스, 주묵받고 있는 해외 IT인력..</span>
                               </div>
-                              <div class="border-bottom border-grey py-2">
-                                   <span class="text-muted mr-3">19.05.05</span>
-                                   해외 IT인력(몽골) 웹개발자 공급 사업 시작
+                              <div class="border-bottom border-grey py-2 row">
+                                   <span class="text-muted mr-3 col-sm-2 order-1 order-md-0">19.05.05</span>
+                                   <span class="notice-title col-sm-10 order-0 order-md-1">해외 IT인력(몽골) 웹개발자 공급 사업 시작</span>
                               </div>
-                              <div class="border-bottom border-grey py-2">
-                                   <span class="text-muted mr-3">19.05.05</span>
-                                   Bizwiz 그룹웨어 인도네시아 현지 서비스 준비중
+                              <div class="border-bottom border-grey py-2 row">
+                                   <span class="text-muted mr-3 col-sm-2 order-1 order-md-0">19.05.05</span>
+                                   <span class="notice-title col-sm-10 order-0 order-md-1">Bizwiz 그룹웨어 인도네시아 현지 서비스 준비중</span>
                               </div>
-                              <div class="border-bottom border-grey py-2">
-                                   <span class="text-muted mr-3">19.05.05</span>
-                                   웹에어젼시협회 솔루션 부분을 수상하였습니다.
+                              <div class="border-bottom border-grey py-2 row">
+                                   <span class="text-muted mr-3 col-sm-2 order-1 order-md-0">19.05.05</span>
+                                   <span class="notice-title col-sm-10 order-0 order-md-1">웹에어젼시협회 솔루션 부분을 수상하였습니다..</span>
                               </div>
-                              <div class="border-bottom border-grey py-2">
-                                   <span class="text-muted mr-3">19.05.05</span>
-                                   대한생명노동조합 홈페이지 리뉴얼을 완료..
+                              <div class="border-bottom border-grey py-2 row">
+                                   <span class="text-muted mr-3 col-sm-2 order-1 order-md-0">19.05.05</span>
+                                   <span class="notice-title col-sm-10 order-0 order-md-1">대한생명노동조합 홈페이지 리뉴얼을 완료..</span>
                               </div>
                          </div>
                     </div>
@@ -198,11 +205,11 @@
                               <span class="mr-3 opacity-60 mb-1">대표: 문양희</span>
                               <span class="mr-3 opacity-60 mb-1">개인정보관리책임자: 박영진</span>
                          </div>
-                         <span class="opacity-60">Copyright @ 2008 타고플러스. All Rights Reserved</span>
+                         <span class="opacity-60 small">Copyright @ 2008 타고플러스. All Rights Reserved</span>
                     </div>
                     <div class="col-sm-3 text-right">
-                         <div class="text-center inline mt-4">
-                              <img src="assets/email.png" alt="">
+                         <div class="text-center inline mail">
+                              <img src="assets/email.png" alt="" class="mt-1">
                               <p class="bold opacity-60 mt-2">admin@tagoplus.co.kr</p>
                          </div>
                     </div>
@@ -210,11 +217,14 @@
           </div>
      </footer>
      </body>
+     <script src="js/common.js" charset="utf-8"></script>
+     
      <script type="text/javascript">
           $('#slide').slick({
                arrows:true,
                infinite:true,
                dots:true,
+               adaptiveHeight: true,
                prevArrow: $('#prev'),
                nextArrow: $('#next'),
                responsive: [
@@ -227,22 +237,5 @@
                ]
           });
      </script>
-     <script type="text/javascript">
 
-          var scrollTop = 0;
-          $(window).scroll(function(){
-          scrollTop = $(window).scrollTop();
-          if (scrollTop >= 250) {
-               $('nav').addClass('bg-white');
-               $('nav').removeClass('text-white');
-               $('.brand').attr('src','assets/logocolor.png').delay(1000)
-          } else if (scrollTop < 250) {
-               $('nav').removeClass('bg-white');
-               $('nav').addClass('text-white');
-               $('.brand').attr('src','assets/logowhite.png').delay(1000)
-          }
-
-
-          });
-     </script>
 </html>

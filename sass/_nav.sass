@@ -2,25 +2,117 @@
      position: absolute
      width: 100%
      z-index: 1
+     color: white
+     -webkit-transition: .3s ease-in-out
+     .brand
+          +py(1.5rem)
+
+     &.fixed
+          color: inherit
+          +shadow
+          .brand
+               +py(1rem)
+          .toggle-menu
+               span
+                    background-color: #0a0a0a
+
+.asd
+     position: absolute
+     top: 0
+     left: 0
+     right: 0
+     z-index: auto
+     height: 100%
+     background-color: white
+     +transform(scaleY,0)
+     +transform-origin(top)
+     transition: inherit
+.asd.anim
+     +transform(scaleY,1)
 .navbar
      +flexbox
-.brand
+     height: 100vh
+     position: absolute
+     top: 0
+     padding-top: 70px
+     padding-bottom: 20px
+     opacity: 0
+     transition: .3s ease-in-out
+     flex-direction: column
+     background-color: white
+     color: initial
+     z-index: -1
+     visibility: hidden
+     +respond-to(small)
+          visibility: visible
+          height: auto
+          padding-bottom: 0
+          transition: inherit
+          +py(1.5rem)
+          opacity: 1
+          position: static
+          color: inherit
+          z-index: 10
+          flex-direction: row
+          justify-content: flex-end
+          background-color: transparent
+     &.show
+          opacity: 1
+          visibility: visible
+.brand img
      @media (max-width:767px)
           height: 30px
 .nav-item
+     font-weight: 400
+     +py(1.2rem)
      position: relative
-     +px(1rem)
+     padding-left: 3rem
+     padding-right: 1rem
+     +respond-to(small)
+          +py(.4rem)
+          padding-left: 1rem
      // &.active
      //      background: $primary
      // &:hover
      //      background-color: $primary
      //      +shadow-lg
 .nav-link
-     +flexbox
-     align-items: center
      +py(.6rem)
      &:hover
-          color: white
+          color: $primary
+
+.toggle-menu
+     margin-top: -4px
+     margin-right: 10px
+     z-index: 10
+     display: block
+     background-color: transparent
+     border: 0
+     +respond-to(small)
+          display: none
+     &:focus
+          outline: none
+     span
+          transition: .4s ease-in-out
+          display: block
+          height: 2px
+          width: 30px
+          background-color: white
+          &:not(:first-child)
+               margin-top: 8px
+               transform-origin: bottom left
+          &:first-child
+               transform-origin: top left
+     &.show
+          span
+               background-color: black
+               &:first-child
+                    +transform(rotate,45deg)
+               &:nth-child(2)
+                    opacity: 0
+               &:last-child
+                    +transform(rotate,-45deg)
+
 .slide
      +flexbox
      align-items: center
@@ -29,13 +121,15 @@
      background-size: cover
 
 .slide-content
-     @media (max-width:767px)
-          font-size: 1.5rem
-     +py(200px)
+     max-height: 400px
+     font-size: 1.8rem
+     padding-top: 130px
+     padding-bottom: 200px
+     text-align: center
      +respond-to(medium)
           +py(300px)
-     font-size: 3rem
-     text-align: center
+          max-height: 720px
+          font-size: 3rem
 
 .slide-control
      left: 0
@@ -95,7 +189,7 @@
           text-align: center
           width: 100%
           .btn
-               margin-top: 30px
+               margin-top: 20px
           +respond-to(medium)
                width: 50%
                text-align: left

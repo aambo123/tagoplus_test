@@ -14,7 +14,9 @@
      background-position: center center
      background-repeat: no-repeat
      background-size: cover
-     padding-top: 240px !important
+     padding-top: 140px !important
+     +respond-to(medium)
+          padding-top: 240px !important
 .notice
      +px(20px)
      +py(10px)
@@ -30,7 +32,7 @@ footer
      color: white
      .col-sm-3
           background-color: lighten($brown,10%)
-          +py(20px)
+          +py(10px)
      .col-sm-9
           background: $brown
           +py(20px)
@@ -49,3 +51,5 @@ footer
                .col-sm-3,.col-sm-9
                     +py(40px)
                     background: $brown
+.notice-title
+     +text-ellipsis

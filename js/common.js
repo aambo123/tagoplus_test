@@ -1,18 +1,40 @@
 var scrollTop = 0;
 $(window).scroll(function(){
 scrollTop = $(window).scrollTop();
-if (scrollTop >= 250) {
-     $('nav').addClass('bg-white shadow');
-     $('nav').removeClass('text-white');
-     $('.brand').attr('src','assets/logocolor.png').delay(1000)
-} else if (scrollTop < 250) {
-     $('nav').removeClass('bg-white shadow');
-     $('nav').addClass('text-white');
-     $('.brand').attr('src','assets/logowhite.png').delay(1000)
+if (scrollTop >= 100) {
+     nav_add();
+} else if (scrollTop < 100) {
+     nav_remove();
 }
-
-
 });
+
+
+function nav_add(){
+     $('.nav').addClass('fixed');
+     $('.asd').addClass('anim');
+     $('.brand>img').attr('src','assets/logocolor.png').delay(1000)
+};
+function nav_remove(){
+     $('.nav').removeClass('fixed');
+     $('.asd').removeClass('anim');
+     $('.brand>img').attr('src','assets/logowhite.png').delay(1000)
+};
+     var flag = 0;
+$('.toggle-menu').click(function(){
+     var logo = $('.brand>img');
+     $(this).toggleClass('show');
+     $(this).next($('.navbar')).toggleClass('show');
+     if (flag == 0 && scrollTop < 100 ) {
+          logo.attr('src','assets/logocolor.png');
+          flag = 1;
+     }else if (flag == 1 && scrollTop < 100) {
+          logo.attr('src','assets/logowhite.png');
+          flag = 0;
+    }
+});
+
+
+
 // phone_number
 $("input[type=tel]").keyup(function () {
 if (this.value.length == this.maxLength) {
