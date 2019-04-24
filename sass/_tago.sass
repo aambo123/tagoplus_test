@@ -1,9 +1,12 @@
 .hero
      position: relative
-     min-height: 300px
+     min-height: 200px
 .header
-     padding-top: 150px
-     padding-bottom: 100px
+     padding-top: 90px
+     padding-bottom: 30px
+     +respond-to(small)
+          padding-top: 150px
+          padding-bottom: 100px
 .community
      background-image: url(../assets/community.jpg)
      background-position: center center

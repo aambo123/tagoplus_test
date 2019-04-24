@@ -31,19 +31,38 @@
 //                text-decoration: none
 //                color: inherit
 .card
+     display: block
      border: 1px solid $light-grey
      +py(1rem)
      +px(1rem)
      background-color: white
      +radius(2px)
      +shadow
+     position: relative
+     margin-bottom: $gap
+     transition: .3s ease-in-out
+     +transform(translateY,0)
+     &:hover
+          +shadow-lg
+          +transform(translateY,-2px)
      .img-wrapper
-          width: 100%
-          img
-               width: 100%
+          position: relative
+          height: 250px
+          +bg-center
      .card-title
           margin-top: 1rem
           font-weight: 500
           white-space: nowrap
           text-overflow: ellipsis
           overflow: hidden
+     .badge
+          position: absolute
+          right: 0
+          font-size: 12px
+          background: $primary
+          color: white
+          top: 10px
+          padding-left: 6px
+          padding-right: 16px
+          font-weight: bold
+          text-transform: uppercase

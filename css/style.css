@@ -2169,10 +2169,10 @@ h1, h2, h3, h4, h5 {
   -webkit-flex-wrap: wrap;
   align-items: center; }
   .form-row .col {
-    flex-basis: 0;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    max-width: 100%; }
+    width: calc((100% - 20px) / 3); }
+  .form-row .f-space {
+    width: 10px;
+    text-align: center; }
 
 .form-title {
   border-bottom: 3px solid #ff900e;
@@ -2197,18 +2197,18 @@ h1, h2, h3, h4, h5 {
   padding-left: 1rem;
   border-radius: 0;
   outline: none;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   .form-control:focus {
     color: #495057;
     background-color: #fff;
     border-color: #ff900e;
     outline: 0;
-    box-shadow: 0 0 0 .2rem rgba(255, 144, 14, 0.25); }
+    box-shadow: 0 0 0 0.2rem rgba(255, 144, 14, 0.25); }
   .form-control + label.active {
     font-weight: bold;
     color: #ffd6a7;
-    -webkit-transform: translateY(-14px) scale(.8);
-    transform: translateY(-14px) scale(.8);
+    -webkit-transform: translateY(-14px) scale(0.8);
+    transform: translateY(-14px) scale(0.8);
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0; }
   .form-control + label {
@@ -2217,10 +2217,10 @@ h1, h2, h3, h4, h5 {
     top: 0;
     font-size: 1rem;
     cursor: text;
-    -webkit-transition: color .2s ease-out, -webkit-transform .2s ease-out;
-    transition: color .2s ease-out, -webkit-transform .2s ease-out;
-    transition: transform .2s ease-out, color .2s ease-out;
-    transition: transform .2s ease-out, color .2s ease-out, -webkit-transform .2s ease-out;
+    -webkit-transition: color 0.2s ease-out, -webkit-transform 0.2s ease-out;
+    transition: color 0.2s ease-out, -webkit-transform 0.2s ease-out;
+    transition: transform 0.2s ease-out, color 0.2s ease-out;
+    transition: transform 0.2s ease-out, color 0.2s ease-out, -webkit-transform 0.2s ease-out;
     -webkit-transform-origin: 0% 100%;
     transform-origin: 0% 100%;
     text-align: initial;
@@ -2228,7 +2228,7 @@ h1, h2, h3, h4, h5 {
     transform: translateY(12px); }
 
 .label {
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: bold;
   color: #ffd6a7; }
 
@@ -2636,12 +2636,15 @@ input[type=range] {
       float: right; } }
 .hero {
   position: relative;
-  min-height: 300px; }
+  min-height: 200px; }
 
 .header {
-  padding-top: 150px;
-  padding-bottom: 100px; }
-
+  padding-top: 90px;
+  padding-bottom: 30px; }
+@media(min-width:767px) {
+  .header {
+    padding-top: 150px;
+    padding-bottom: 100px; } }
 .community {
   background-image: url(../assets/community.jpg);
   background-position: center center;
@@ -2708,6 +2711,7 @@ footer {
   text-overflow: ellipsis; }
 
 .card {
+  display: block;
   border: 1px solid #f2f2f2;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -2715,17 +2719,39 @@ footer {
   padding-right: 1rem;
   background-color: white;
   border-radius: 2px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-bottom: 20px;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: translateY(0);
+  transform: translateY(0); }
+  .card:hover {
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px); }
   .card .img-wrapper {
-    width: 100%; }
-    .card .img-wrapper img {
-      width: 100%; }
+    position: relative;
+    height: 250px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; }
   .card .card-title {
     margin-top: 1rem;
     font-weight: 500;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden; }
+  .card .badge {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    background: #ff900e;
+    color: white;
+    top: 10px;
+    padding-left: 6px;
+    padding-right: 16px;
+    font-weight: bold;
+    text-transform: uppercase; }
 
 .dropdown::after {
   top: 9px;
@@ -2848,7 +2874,7 @@ footer {
   .table td, .table th {
     border-top: 1px solid #d3d3d3;
     border-bottom: 1px solid #d3d3d3;
-    padding: .75rem; }
+    padding: 0.75rem; }
 
 th {
   text-align: center;
