@@ -46,10 +46,6 @@ if (this.value.length == this.maxLength) {
 }
 });
 
-// range
-$('#range').on('change', function() {
-     $(this).next('#range-value').html(this.value);
-});
 
 
 
