@@ -12,12 +12,20 @@
      background-position: center center
      background-repeat: no-repeat
      background-size: cover
+     &>div
+          +py(1.5rem)
+          +respond-to(medium)
+               +py(4rem)
+     img
+          width: 80px
+          +respond-to(small)
+               width: auto
 .customer-center
      background-image: url(../assets/phone.jpg)
      background-position: center center
      background-repeat: no-repeat
      background-size: cover
-     padding-top: 330px !important
+     padding-top: 200px !important
      +respond-to(medium)
           padding-top: 240px !important
 .notice

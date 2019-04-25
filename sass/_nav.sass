@@ -149,7 +149,7 @@
      +respond-to(medium)
           max-width: 960px-156px
      +respond-to(large)
-          max-width: 1140px-156px
+          max-width: 1160px
      @media (max-width:767px)
           display: none
 .slide-arrow#prev
@@ -187,6 +187,10 @@
      +flexbox
      +flex-wrap
      .half
+          &:nth-child(2)
+               height: 300px
+               +respond-to(small)
+                    height: auto
           text-align: center
           width: 100%
           .btn
