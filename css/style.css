@@ -1986,6 +1986,7 @@ input[type=range] {
   height: 100vh;
   position: absolute;
   top: 0;
+  left: 0;
   padding-top: 70px;
   padding-bottom: 20px;
   opacity: 0;
@@ -1995,7 +1996,7 @@ input[type=range] {
   color: initial;
   z-index: -1;
   visibility: hidden; }
-@media(min-width:767px) {
+@media(min-width:992px) {
   .navbar {
     visibility: visible;
     height: auto;
@@ -2025,7 +2026,7 @@ input[type=range] {
   position: relative;
   padding-left: 3rem;
   padding-right: 1rem; }
-@media(min-width:767px) {
+@media(min-width:992px) {
   .nav-item {
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
@@ -2043,7 +2044,7 @@ input[type=range] {
   display: block;
   background-color: transparent;
   border: 0; }
-@media(min-width:767px) {
+@media(min-width:992px) {
   .toggle-menu {
     display: none; } }
   .toggle-menu:focus {
