@@ -2529,26 +2529,17 @@ figcaption {
   margin-bottom: 1rem;
   color: #212529;
   text-align: left; }
-
-.t-cell {
-  padding: 1rem;
-  border: 1px solid #d3d3d3;
-  margin-left: -1px;
-  margin-bottom: -1px; }
-  .t-cell:nth-child(odd) {
-    background: #f2f2f2;
-    font-weight: 500; }
-  .t-cell .form-control {
+  .table .form-control {
     margin-top: 0;
     margin-bottom: 0; }
-  .t-cell tr {
+  .table tr {
     border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
-  .t-cell thead td, .t-cell thead th {
+  .table thead td, .table thead th {
     border-bottom-width: 2px; }
-  .t-cell thead th {
+  .table thead th {
     background-color: #f2f2f2;
     vertical-align: bottom; }
-  .t-cell td, .t-cell th {
+  .table td, .table th {
     border: 1px solid #d3d3d3;
     padding: 1rem; }
 
@@ -2559,6 +2550,15 @@ th {
 
 .table-responsive {
   overflow-x: scroll; }
+
+.t-cell {
+  padding: 1rem;
+  border: 1px solid #d3d3d3;
+  margin-left: -1px;
+  margin-bottom: -1px; }
+  .t-cell:nth-child(odd) {
+    background: #f2f2f2;
+    font-weight: 500; }
 
 /* noto-sans-kr-300 - korean */
 
