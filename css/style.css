@@ -2,7 +2,7 @@
 *, ::before, ::after {
   box-sizing: border-box; }
 
-html, body, ul {
+html, body {
   margin: 0;
   padding: 0;
   text-rendering: geometricPrecision; }
@@ -18,15 +18,17 @@ body {
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: "liga" on;
-  word-break: keep-all; }
+  word-break: keep-all;
+  counter-reset: count; }
 
 p {
   margin-top: 0;
-  margin-bottom: .25rem; }
+  margin-bottom: 0.25rem; }
 
 ol:not(.default), ul:not(.default) {
   list-style: none;
-  padding-left: 0; }
+  padding-left: 0;
+  margin: 0; }
 
 a {
   text-decoration: none;
@@ -54,6 +56,9 @@ table {
 
 .list-inside {
   list-style-position: inside; }
+
+.list-square {
+  list-style-type: square; }
 
 @font-face {
   font-family: "Noto Sans KR";
@@ -246,40 +251,31 @@ h1, h2, h3, h4, h5 {
   color: #372f2d; }
 
 .bg-brown-10 {
-  background-color: rgba(55, 47, 45, 0.1);
-  color: white !important; }
+  background-color: rgba(55, 47, 45, 0.1); }
 
 .bg-brown-20 {
-  background-color: rgba(55, 47, 45, 0.2);
-  color: white !important; }
+  background-color: rgba(55, 47, 45, 0.2); }
 
 .bg-brown-30 {
-  background-color: rgba(55, 47, 45, 0.3);
-  color: white !important; }
+  background-color: rgba(55, 47, 45, 0.3); }
 
 .bg-brown-40 {
-  background-color: rgba(55, 47, 45, 0.4);
-  color: white !important; }
+  background-color: rgba(55, 47, 45, 0.4); }
 
 .bg-brown-50 {
-  background-color: rgba(55, 47, 45, 0.5);
-  color: white !important; }
+  background-color: rgba(55, 47, 45, 0.5); }
 
 .bg-brown-60 {
-  background-color: rgba(55, 47, 45, 0.6);
-  color: white !important; }
+  background-color: rgba(55, 47, 45, 0.6); }
 
 .bg-brown-70 {
-  background-color: rgba(55, 47, 45, 0.7);
-  color: white !important; }
+  background-color: rgba(55, 47, 45, 0.7); }
 
 .bg-brown-80 {
-  background-color: rgba(55, 47, 45, 0.8);
-  color: white !important; }
+  background-color: rgba(55, 47, 45, 0.8); }
 
 .bg-brown-90 {
-  background-color: rgba(55, 47, 45, 0.9);
-  color: white !important; }
+  background-color: rgba(55, 47, 45, 0.9); }
 
 .bg-white {
   background-color: white;
@@ -290,40 +286,31 @@ h1, h2, h3, h4, h5 {
   color: white; }
 
 .bg-white-10 {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #3d4852 !important; }
+  background-color: rgba(255, 255, 255, 0.1); }
 
 .bg-white-20 {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #3d4852 !important; }
+  background-color: rgba(255, 255, 255, 0.2); }
 
 .bg-white-30 {
-  background-color: rgba(255, 255, 255, 0.3);
-  color: #3d4852 !important; }
+  background-color: rgba(255, 255, 255, 0.3); }
 
 .bg-white-40 {
-  background-color: rgba(255, 255, 255, 0.4);
-  color: #3d4852 !important; }
+  background-color: rgba(255, 255, 255, 0.4); }
 
 .bg-white-50 {
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #3d4852 !important; }
+  background-color: rgba(255, 255, 255, 0.5); }
 
 .bg-white-60 {
-  background-color: rgba(255, 255, 255, 0.6);
-  color: #3d4852 !important; }
+  background-color: rgba(255, 255, 255, 0.6); }
 
 .bg-white-70 {
-  background-color: rgba(255, 255, 255, 0.7);
-  color: #3d4852 !important; }
+  background-color: rgba(255, 255, 255, 0.7); }
 
 .bg-white-80 {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #3d4852 !important; }
+  background-color: rgba(255, 255, 255, 0.8); }
 
 .bg-white-90 {
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #3d4852 !important; }
+  background-color: rgba(255, 255, 255, 0.9); }
 
 .bg-blueish-pink {
   background-color: #3b55bc;
@@ -334,40 +321,31 @@ h1, h2, h3, h4, h5 {
   color: #3b55bc; }
 
 .bg-blueish-pink-10 {
-  background-color: rgba(59, 85, 188, 0.1);
-  color: white !important; }
+  background-color: rgba(59, 85, 188, 0.1); }
 
 .bg-blueish-pink-20 {
-  background-color: rgba(59, 85, 188, 0.2);
-  color: white !important; }
+  background-color: rgba(59, 85, 188, 0.2); }
 
 .bg-blueish-pink-30 {
-  background-color: rgba(59, 85, 188, 0.3);
-  color: white !important; }
+  background-color: rgba(59, 85, 188, 0.3); }
 
 .bg-blueish-pink-40 {
-  background-color: rgba(59, 85, 188, 0.4);
-  color: white !important; }
+  background-color: rgba(59, 85, 188, 0.4); }
 
 .bg-blueish-pink-50 {
-  background-color: rgba(59, 85, 188, 0.5);
-  color: white !important; }
+  background-color: rgba(59, 85, 188, 0.5); }
 
 .bg-blueish-pink-60 {
-  background-color: rgba(59, 85, 188, 0.6);
-  color: white !important; }
+  background-color: rgba(59, 85, 188, 0.6); }
 
 .bg-blueish-pink-70 {
-  background-color: rgba(59, 85, 188, 0.7);
-  color: white !important; }
+  background-color: rgba(59, 85, 188, 0.7); }
 
 .bg-blueish-pink-80 {
-  background-color: rgba(59, 85, 188, 0.8);
-  color: white !important; }
+  background-color: rgba(59, 85, 188, 0.8); }
 
 .bg-blueish-pink-90 {
-  background-color: rgba(59, 85, 188, 0.9);
-  color: white !important; }
+  background-color: rgba(59, 85, 188, 0.9); }
 
 .bg-teal {
   background-color: #23a0e0;
@@ -378,40 +356,31 @@ h1, h2, h3, h4, h5 {
   color: #23a0e0; }
 
 .bg-teal-10 {
-  background-color: rgba(35, 160, 224, 0.1);
-  color: white !important; }
+  background-color: rgba(35, 160, 224, 0.1); }
 
 .bg-teal-20 {
-  background-color: rgba(35, 160, 224, 0.2);
-  color: white !important; }
+  background-color: rgba(35, 160, 224, 0.2); }
 
 .bg-teal-30 {
-  background-color: rgba(35, 160, 224, 0.3);
-  color: white !important; }
+  background-color: rgba(35, 160, 224, 0.3); }
 
 .bg-teal-40 {
-  background-color: rgba(35, 160, 224, 0.4);
-  color: white !important; }
+  background-color: rgba(35, 160, 224, 0.4); }
 
 .bg-teal-50 {
-  background-color: rgba(35, 160, 224, 0.5);
-  color: white !important; }
+  background-color: rgba(35, 160, 224, 0.5); }
 
 .bg-teal-60 {
-  background-color: rgba(35, 160, 224, 0.6);
-  color: white !important; }
+  background-color: rgba(35, 160, 224, 0.6); }
 
 .bg-teal-70 {
-  background-color: rgba(35, 160, 224, 0.7);
-  color: white !important; }
+  background-color: rgba(35, 160, 224, 0.7); }
 
 .bg-teal-80 {
-  background-color: rgba(35, 160, 224, 0.8);
-  color: white !important; }
+  background-color: rgba(35, 160, 224, 0.8); }
 
 .bg-teal-90 {
-  background-color: rgba(35, 160, 224, 0.9);
-  color: white !important; }
+  background-color: rgba(35, 160, 224, 0.9); }
 
 .bg-light-grey {
   background-color: #f2f2f2;
@@ -422,40 +391,31 @@ h1, h2, h3, h4, h5 {
   color: #f2f2f2; }
 
 .bg-light-grey-10 {
-  background-color: rgba(242, 242, 242, 0.1);
-  color: #3d4852 !important; }
+  background-color: rgba(242, 242, 242, 0.1); }
 
 .bg-light-grey-20 {
-  background-color: rgba(242, 242, 242, 0.2);
-  color: #3d4852 !important; }
+  background-color: rgba(242, 242, 242, 0.2); }
 
 .bg-light-grey-30 {
-  background-color: rgba(242, 242, 242, 0.3);
-  color: #3d4852 !important; }
+  background-color: rgba(242, 242, 242, 0.3); }
 
 .bg-light-grey-40 {
-  background-color: rgba(242, 242, 242, 0.4);
-  color: #3d4852 !important; }
+  background-color: rgba(242, 242, 242, 0.4); }
 
 .bg-light-grey-50 {
-  background-color: rgba(242, 242, 242, 0.5);
-  color: #3d4852 !important; }
+  background-color: rgba(242, 242, 242, 0.5); }
 
 .bg-light-grey-60 {
-  background-color: rgba(242, 242, 242, 0.6);
-  color: #3d4852 !important; }
+  background-color: rgba(242, 242, 242, 0.6); }
 
 .bg-light-grey-70 {
-  background-color: rgba(242, 242, 242, 0.7);
-  color: #3d4852 !important; }
+  background-color: rgba(242, 242, 242, 0.7); }
 
 .bg-light-grey-80 {
-  background-color: rgba(242, 242, 242, 0.8);
-  color: #3d4852 !important; }
+  background-color: rgba(242, 242, 242, 0.8); }
 
 .bg-light-grey-90 {
-  background-color: rgba(242, 242, 242, 0.9);
-  color: #3d4852 !important; }
+  background-color: rgba(242, 242, 242, 0.9); }
 
 .bg-black {
   background-color: black;
@@ -466,40 +426,31 @@ h1, h2, h3, h4, h5 {
   color: #000; }
 
 .bg-black-10 {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: white !important; }
+  background-color: rgba(0, 0, 0, 0.1); }
 
 .bg-black-20 {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: white !important; }
+  background-color: rgba(0, 0, 0, 0.2); }
 
 .bg-black-30 {
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white !important; }
+  background-color: rgba(0, 0, 0, 0.3); }
 
 .bg-black-40 {
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white !important; }
+  background-color: rgba(0, 0, 0, 0.4); }
 
 .bg-black-50 {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white !important; }
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .bg-black-60 {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white !important; }
+  background-color: rgba(0, 0, 0, 0.6); }
 
 .bg-black-70 {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white !important; }
+  background-color: rgba(0, 0, 0, 0.7); }
 
 .bg-black-80 {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white !important; }
+  background-color: rgba(0, 0, 0, 0.8); }
 
 .bg-black-90 {
-  background-color: rgba(0, 0, 0, 0.9);
-  color: white !important; }
+  background-color: rgba(0, 0, 0, 0.9); }
 
 .bg-red {
   background-color: #e3342f;
@@ -510,40 +461,31 @@ h1, h2, h3, h4, h5 {
   color: #E3342F; }
 
 .bg-red-10 {
-  background-color: rgba(227, 52, 47, 0.1);
-  color: white !important; }
+  background-color: rgba(227, 52, 47, 0.1); }
 
 .bg-red-20 {
-  background-color: rgba(227, 52, 47, 0.2);
-  color: white !important; }
+  background-color: rgba(227, 52, 47, 0.2); }
 
 .bg-red-30 {
-  background-color: rgba(227, 52, 47, 0.3);
-  color: white !important; }
+  background-color: rgba(227, 52, 47, 0.3); }
 
 .bg-red-40 {
-  background-color: rgba(227, 52, 47, 0.4);
-  color: white !important; }
+  background-color: rgba(227, 52, 47, 0.4); }
 
 .bg-red-50 {
-  background-color: rgba(227, 52, 47, 0.5);
-  color: white !important; }
+  background-color: rgba(227, 52, 47, 0.5); }
 
 .bg-red-60 {
-  background-color: rgba(227, 52, 47, 0.6);
-  color: white !important; }
+  background-color: rgba(227, 52, 47, 0.6); }
 
 .bg-red-70 {
-  background-color: rgba(227, 52, 47, 0.7);
-  color: white !important; }
+  background-color: rgba(227, 52, 47, 0.7); }
 
 .bg-red-80 {
-  background-color: rgba(227, 52, 47, 0.8);
-  color: white !important; }
+  background-color: rgba(227, 52, 47, 0.8); }
 
 .bg-red-90 {
-  background-color: rgba(227, 52, 47, 0.9);
-  color: white !important; }
+  background-color: rgba(227, 52, 47, 0.9); }
 
 .bg-primary {
   background-color: #ff900e;
@@ -554,40 +496,31 @@ h1, h2, h3, h4, h5 {
   color: #ff900e; }
 
 .bg-primary-10 {
-  background-color: rgba(255, 144, 14, 0.1);
-  color: white !important; }
+  background-color: rgba(255, 144, 14, 0.1); }
 
 .bg-primary-20 {
-  background-color: rgba(255, 144, 14, 0.2);
-  color: white !important; }
+  background-color: rgba(255, 144, 14, 0.2); }
 
 .bg-primary-30 {
-  background-color: rgba(255, 144, 14, 0.3);
-  color: white !important; }
+  background-color: rgba(255, 144, 14, 0.3); }
 
 .bg-primary-40 {
-  background-color: rgba(255, 144, 14, 0.4);
-  color: white !important; }
+  background-color: rgba(255, 144, 14, 0.4); }
 
 .bg-primary-50 {
-  background-color: rgba(255, 144, 14, 0.5);
-  color: white !important; }
+  background-color: rgba(255, 144, 14, 0.5); }
 
 .bg-primary-60 {
-  background-color: rgba(255, 144, 14, 0.6);
-  color: white !important; }
+  background-color: rgba(255, 144, 14, 0.6); }
 
 .bg-primary-70 {
-  background-color: rgba(255, 144, 14, 0.7);
-  color: white !important; }
+  background-color: rgba(255, 144, 14, 0.7); }
 
 .bg-primary-80 {
-  background-color: rgba(255, 144, 14, 0.8);
-  color: white !important; }
+  background-color: rgba(255, 144, 14, 0.8); }
 
 .bg-primary-90 {
-  background-color: rgba(255, 144, 14, 0.9);
-  color: white !important; }
+  background-color: rgba(255, 144, 14, 0.9); }
 
 .shadow {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); }
@@ -2332,18 +2265,84 @@ footer {
   border-bottom: 1px solid #d3d3d3;
   border-top: 3px solid #a0a0a0; }
 
-.quotation {
-  text-align: center; }
-  .quotation::before, .quotation::after {
-    font-size: 50px;
-    line-height: 0;
-    color: #d3d3d3; }
-  .quotation::before {
-    content: "❝";
-    margin-right: 0.5rem; }
-  .quotation::after {
-    content: "❞";
-    margin-left: 0.5rem; }
+.quotation::before, .quotation::after {
+  font-size: 50px;
+  line-height: 0;
+  color: #d3d3d3; }
+.quotation::before {
+  content: "❝";
+  margin-right: 0.5rem; }
+.quotation::after {
+  content: "❞";
+  margin-left: 0.5rem; }
+
+article {
+  position: relative; }
+
+figcaption {
+  position: absolute;
+  color: white;
+  padding: 3rem 1rem 1rem 1rem;
+  width: 100%;
+  bottom: 0;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='000000',GradientType=0 ); }
+
+.h-445 {
+  min-height: 445px; }
+
+.arr {
+  position: relative; }
+  .arr::after {
+    content: "";
+    background-color: inherit;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg); }
+
+.card-man {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid #d3d3d3;
+  flex-direction: column; }
+@media(min-width:992px) {
+  .card-man {
+    flex-direction: row;
+    align-items: center; } }
+  .card-man .content {
+    padding-left: 1rem; }
+@media(min-width:992px) {
+  .card-man .content {
+    padding-left: 3.5rem; } }
+  .card-man h4 {
+    padding-left: 17px;
+    position: relative; }
+    .card-man h4::before {
+      position: absolute;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 30px;
+      content: "0" counter(count);
+      counter-increment: count;
+      color: white;
+      left: -20px;
+      border-radius: 30px;
+      background: #FFFF59;
+      background: -moz-linear-gradient(-45deg, #FFFF59 0%, #ff900e 100%);
+      background: -webkit-linear-gradient(-45deg, #FFFF59 0%, #ff900e 100%);
+      background: linear-gradient(135deg, #FFFF59 0%, #ff900e 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFF59', endColorstr='#ff900e',GradientType=1 ); }
 
 .card-vertical {
   padding-top: 1.8rem;

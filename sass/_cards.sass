@@ -30,6 +30,36 @@
 //                margin-right: 1rem
 //                text-decoration: none
 //                color: inherit
+.card-man
+     +flexbox
+     +py(1rem)
+     border-top: 1px solid $grey
+     flex-direction: column
+     +respond-to(medium)
+          flex-direction: row
+          align-items: center
+     .content
+          padding-left: 1rem
+          +respond-to(medium)
+               padding-left: 3.5rem
+     h4
+          padding-left: 17px
+          position: relative
+          &::before
+               position: absolute
+               display: inline-block
+               width: ($gap/2)*3
+               height: ($gap/2)*3
+               text-align: center
+               font-size: 14px
+               line-height: ($gap/2)*3
+               content: "0"counter(count)
+               counter-increment: count
+               color: white
+               left: -$gap
+               border-radius: ($gap/2)*3
+               +gradient(#FFFF59,$primary)
+
 .card-vertical
      +py(1.8rem)
      +px(1rem)
