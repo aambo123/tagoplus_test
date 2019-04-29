@@ -2582,8 +2582,7 @@ figcaption {
 
 th {
   text-align: center;
-  vertical-align: middle;
-  background: #f2f2f2; }
+  vertical-align: middle; }
 
 .table-responsive {
   overflow-x: scroll; }
