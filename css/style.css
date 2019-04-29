@@ -1799,18 +1799,18 @@ h1, h2, h3, h4, h5 {
   padding-left: 1rem;
   border-radius: 0;
   outline: none;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   .form-control:focus {
     color: #495057;
     background-color: #fff;
     border-color: #ff900e;
     outline: 0;
-    box-shadow: 0 0 0 .2rem rgba(255, 144, 14, 0.25); }
+    box-shadow: 0 0 0 0.2rem rgba(255, 144, 14, 0.25); }
   .form-control + label.active {
     font-weight: bold;
     color: #ffd6a7;
-    -webkit-transform: translateY(-14px) scale(.8);
-    transform: translateY(-14px) scale(.8);
+    -webkit-transform: translateY(-14px) scale(0.8);
+    transform: translateY(-14px) scale(0.8);
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0; }
   .form-control + label {
@@ -1819,10 +1819,10 @@ h1, h2, h3, h4, h5 {
     top: 0;
     font-size: 1rem;
     cursor: text;
-    -webkit-transition: color .2s ease-out, -webkit-transform .2s ease-out;
-    transition: color .2s ease-out, -webkit-transform .2s ease-out;
-    transition: transform .2s ease-out, color .2s ease-out;
-    transition: transform .2s ease-out, color .2s ease-out, -webkit-transform .2s ease-out;
+    -webkit-transition: color 0.2s ease-out, -webkit-transform 0.2s ease-out;
+    transition: color 0.2s ease-out, -webkit-transform 0.2s ease-out;
+    transition: transform 0.2s ease-out, color 0.2s ease-out;
+    transition: transform 0.2s ease-out, color 0.2s ease-out, -webkit-transform 0.2s ease-out;
     -webkit-transform-origin: 0% 100%;
     transform-origin: 0% 100%;
     text-align: initial;
@@ -1830,7 +1830,7 @@ h1, h2, h3, h4, h5 {
     transform: translateY(12px); }
 
 .label {
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: bold;
   color: #ffd6a7; }
 
@@ -1856,11 +1856,6 @@ input[type=range] {
 
 #duplicate input:not(:first-child) {
   margin-top: 1rem; }
-
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; }
 
 .btn {
   text-shadow: none;
