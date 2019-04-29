@@ -2486,7 +2486,7 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid #da7600; }
+  border-bottom: 1px solid #333; }
   .tabs a {
     padding-left: 1.6rem;
     padding-right: 1.6rem;
@@ -2496,16 +2496,16 @@ figcaption {
     margin-bottom: -1px;
     margin-right: 2px;
     border-width: 3px 1px 1px 1px;
-    border-color: #ff900e;
+    border-color: #333;
     border-bottom-color: white !important;
     border-style: solid;
     border-radius: 4px 4px 0 0;
     background-color: white; }
     .tabs a.inactive {
-      background-color: #da7600;
+      background-color: darkgray;
       color: white;
-      border-color: #da7600;
-      border-bottom-color: #da7600 !important;
+      border-color: darkgray;
+      border-bottom-color: darkgray !important;
       margin-bottom: 0px; }
 
 .icon {
@@ -2534,13 +2534,32 @@ figcaption {
 
 .inner {
   padding-left: 30px;
-  display: none; }
+  display: none;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem; }
   .inner.show {
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
     font-weight: 500;
     align-items: center;
     background-color: #f2f2f2; }
+
+.tab-big {
+  border-bottom: 1px solid #333; }
+  .tab-big a {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+    display: block;
+    background: #f2f2f2;
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    border-color: #d3d3d3;
+    text-align: center;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    font-weight: 300; }
+    .tab-big a.active {
+      background: #333;
+      color: white;
+      border-color: #333; }
 
 .table {
   width: 100%;

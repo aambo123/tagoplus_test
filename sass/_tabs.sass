@@ -1,6 +1,6 @@
 .tabs
      +flexbox
-     border-bottom: 1px solid darken($primary, 10%)
+     border-bottom: 1px solid #333
      a
           +px(1.6rem)
           display: block
@@ -8,16 +8,16 @@
           margin-bottom: -1px
           margin-right: 2px
           border-width: 3px 1px 1px 1px
-          border-color: $primary
+          border-color: #333
           border-bottom-color: white !important
           border-style: solid
           border-radius: 4px 4px 0 0
           background-color: white
           &.inactive
-               background-color: darken($primary, 10%)
+               background-color: rgb(169, 169, 169)
                color: white
-               border-color: darken($primary, 10%)
-               border-bottom-color: darken($primary, 10%) !important
+               border-color: rgb(169, 169, 169)
+               border-bottom-color: rgb(169, 169, 169) !important
                margin-bottom: 0px
 .icon
      display: inline-block
@@ -41,8 +41,25 @@
 .inner
      padding-left: 30px
      display: none
+     +py(.6rem)
      &.show
-          +py(.6rem)
           font-weight: 500
           align-items: center
           background-color: $light-grey
+.tab-big
+     border-bottom: 1px solid #333
+     a
+          flex: 0 0 33.3333333333%
+          max-width: 33.3333333333%
+          display: block
+          background: $light-grey
+          border-width: 1px 1px 0 1px
+          border-style: solid
+          border-color: $grey
+          text-align: center
+          +py(1.2rem)
+          font-weight: 300
+          &.active
+               background: #333
+               color: white
+               border-color: #333
