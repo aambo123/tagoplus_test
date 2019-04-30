@@ -1892,6 +1892,11 @@ input[type=range] {
   color: #333333;
   border: 1px solid #333333; }
 
+.btn-dark {
+  background-color: #333333;
+  color: white;
+  border: 1px solid #333333; }
+
 .btn-primary {
   background-color: #ff900e;
   color: #fff;
@@ -2390,23 +2395,13 @@ figcaption {
 
 .card {
   display: block;
-  border: 1px solid #f2f2f2;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  border: 1px solid #d3d3d3;
   background-color: white;
-  border-radius: 2px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   position: relative;
   margin-bottom: 20px;
-  transition: 0.3s ease-in-out;
-  -webkit-transform: translateY(0);
-  transform: translateY(0); }
+  transition: 0.3s ease-in-out; }
   .card:hover {
-    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px); }
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08); }
   .card .img-wrapper {
     position: relative;
     height: 250px;
@@ -2414,7 +2409,10 @@ figcaption {
     background-size: cover;
     background-repeat: no-repeat; }
   .card .card-title {
-    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     font-weight: 500;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -2560,22 +2558,24 @@ figcaption {
   width: 100%;
   margin-bottom: 1rem;
   color: #212529;
-  text-align: left; }
+  text-align: left;
+  font-size: 14px; }
   .table .form-control {
     margin-top: 0;
     margin-bottom: 0; }
   .table tr {
     border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
   .table thead td, .table thead th {
-    border-bottom-width: 2px; }
+    border-top: 2px solid rgba(0, 0, 0, 0.24); }
   .table thead th {
     background-color: #f2f2f2;
     vertical-align: bottom; }
   .table td, .table th {
-    border: 1px solid #d3d3d3;
-    padding: 1rem; }
+    border-top: 1px solid #d3d3d3;
+    padding: 0.7rem; }
 
 th {
+  font-weight: 400;
   text-align: center;
   vertical-align: middle; }
 

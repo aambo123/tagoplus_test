@@ -88,25 +88,20 @@
 
 .card
      display: block
-     border: 1px solid $light-grey
-     +py(1rem)
-     +px(1rem)
+     border: 1px solid $grey
      background-color: white
-     +radius(2px)
-     +shadow
      position: relative
      margin-bottom: $gap
      transition: .3s ease-in-out
-     +transform(translateY,0)
      &:hover
-          +shadow-lg
-          +transform(translateY,-2px)
+          +shadow-md
      .img-wrapper
           position: relative
           height: 250px
           +bg-center
      .card-title
-          margin-top: 1rem
+          +py(1rem)
+          +px(1.5rem)
           font-weight: 500
           white-space: nowrap
           text-overflow: ellipsis
